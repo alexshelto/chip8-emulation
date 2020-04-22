@@ -37,28 +37,29 @@ the first returns from a sub routine, the seccond clears screen, and the third c
 ### 3xxx, 4xxx, 5xxx, 9xxx Opcode: Conditionals
 | Oppcode | Nemonic |
 |---------|---------|
-|3A00     | EQ  VA, #$00|
-|4800     | NE  V8, #$00|
-|5A70     | EQ  VA, V7  |
-|93B0     | NE  V3. VB  |
+|3A00 | EQ  VA, #$00|
+|4800 | NE  V8, #$00|
+|5A70 | EQ  VA, V7  |
+|93B0 | NE  V3. VB  |
 where EQ checks for equality and NE checks for not equal
 
 ### 9xxx, Register Opcode
 * There are 9 instructions in the 8xxx group that use 2 registers
 * Vx gets modified by Vy <br>
 Some opperations will midify 'VF' based on the result of the math or storing numbers. this is chip 8's condition codes <br>
-* For the assembly syntax, a dot '.' after instructions indicates the modification of 'VF'
+* For the assembly syntax, a dot '.' after instructions indicates the modification of 'VF' <br>
+
 | Opcode | Nemonic |
 |--------|---------|    
-|83A0|     MOV   V3, VA|    
-|83A1|     OR    V3, VA|    
-|83A2|     AND   V3, VA|   
-|83A3|     XOR   V3, VA|   
-|83B4|     ADD.  V3, VB|    
-|83B5|     SUB.  V3, VB|    
-|83x6|     SHR.  V3    |
-|83B7|     SUBB. V3, VB|   
-|83xE|     SHL.  V3    |
+|83A0 |  MOV   V3, VA|    
+|83A1 |  OR    V3, VA|    
+|83A2 |  AND   V3, VA|   
+|83A3 |  XOR   V3, VA|   
+|83B4 |  ADD.  V3, VB|    
+|83B5 |  SUB.  V3, VB|    
+|83x6 |  SHR.  V3    |
+|83B7 |  SUBB. V3, VB|   
+|83xE |  SHL.  V3    |
 
 ### The rest of Chip-8 Opcodes...
 * The rest of the Opcodes cannot be easilly classified. Most have to do with timers, sprites, and interactions
