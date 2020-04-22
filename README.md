@@ -45,9 +45,9 @@ where EQ checks for equality and NE checks for not equal
 
 ### 9xxx, Register Opcode
 * There are 9 instructions in the 8xxx group that use 2 registers
-* Vx gets modified by Vy
+* Vx gets modified by Vy <br>
 Some opperations will midify 'VF' based on the result of the math or storing numbers. this is chip 8's condition codes <br>
-For the assembly syntax, a dot '.' after instructions indicates the modification of 'VF'
+* For the assembly syntax, a dot '.' after instructions indicates the modification of 'VF'
 | Opcode | Nemonic |
 |--------|---------|    
 |83A0|     MOV   V3, VA|    
