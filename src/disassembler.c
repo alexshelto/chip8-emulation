@@ -11,6 +11,9 @@
 
 void DisassembleChip8(uint8_t *codeBuffer, int programCounter) {
     uint8_t *code = &codeBuffer[programCounter];
+    //0x200 because all chip-8 programs start at 0x200 in memory
+    //Opcodes are organized by the first upper half (nibble) of the first byte
+    
     uint8_t firstNib = code[0] >> 4;
     printf("%04x %02x %02x ", programCounter, code[0], code[1]);    
     switch (firstNib)    
