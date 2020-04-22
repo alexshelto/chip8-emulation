@@ -63,19 +63,20 @@ Some opperations will midify 'VF' based on the result of the math or storing num
 
 ## The rest of Chip-8 Opcodes...
 * The rest of the Opcodes cannot be easilly classified. Most have to do with timers, sprites, and interactions.  
-* below is the syntax for them and you can read more in the wiki <br>      
+* below is the syntax for them and you can read more in the wiki <br>     
+
 | Opcode | Nemonic |
 |--------|---------|    
-|DXYN |  SPRITE       VX, VY, #$N |   
-|EX9E |  SKIP.KEY     VX          |
-|EXA1 |  SKIP.NOKEY   VX          |
-|FX07 |  MOV          VX, DELAY   |
-|FX0A |  WAITKEY      VX          |
-|FX15 |  MOV          DELAY, VX   | 
-|FX18 |  MOV          SOUND, VX   | 
-|FX1E |  ADD          I, VX       |
-|FX29 |  SPRITECHAR   VX          |
-|FX33 |  MOVBCD       VX          |
-|FX55 |  MOVM         (I), V0-VX  | 
-|FX65 |  MOVM         V0-VX, (I)  |
+|DXYN    |  SPRITE       VX, VY, #$N |   
+|EX9E    |  SKIP.KEY     VX          |
+|EXA1    |  SKIP.NOKEY   VX          |
+|FX07    |  MOV          VX, DELAY   |
+|FX0A    |  WAITKEY      VX          |
+|FX15    |  MOV          DELAY, VX   | 
+|FX18    |  MOV          SOUND, VX   | 
+|FX1E    |  ADD          I, VX       |
+|FX29    |  SPRITECHAR   VX          |
+|FX33    |  MOVBCD       VX          |
+|FX55    |  MOVM         (I), V0-VX  | 
+|FX65    |  MOVM         V0-VX, (I)  |
 
