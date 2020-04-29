@@ -2,6 +2,13 @@
 # Created by https://www.gitignore.io/api/c,code
 # Edit at https://www.gitignore.io/?templates=c,code
 
+
+### ROM Programs ###
+ROM/
+
+
+
+
 ### ds_store ###
 .DS_Store
 
